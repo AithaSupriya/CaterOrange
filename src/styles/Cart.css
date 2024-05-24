@@ -1,0 +1,402 @@
+.cart-child1 {
+    height: 12rem; /* 16rem * 0.8 */
+    background-image: url(https://wallpapercave.com/wp/wp2800736.jpg);
+    background-attachment: fixed; 
+    background-size: cover; 
+    color: white;
+    font-size: 40px; /* 50px * 0.8 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.cart-child2 {
+    display: flex;
+    align-items: center;
+    height: 2rem; /* 4rem * 0.8 */
+    background-color: rgb(244, 244, 246);
+    padding-left: 2.4rem; /* 3rem * 0.8 */
+    font-size: 15px; /* Adding font-size for better scaling */
+}
+
+.cart-child3 {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem; /* 15rem * 0.8 */
+    justify-content: center;
+    padding: 2.4rem; /* 3rem * 0.8 */
+    
+    
+}
+
+.my-table {
+    width: 40rem; /* 50rem * 0.8 */
+}
+
+.my-table1 {
+    width: 6rem; /* 15rem * 0.8 */   
+}
+.table-success{
+    font-size: 13px;
+}
+
+.payment-div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; /* 3rem * 0.8 */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 16rem; /* 20rem * 0.8 */
+    padding: 1.6rem; /* 2rem * 0.8 */
+    height: fit-content;
+}
+
+.payment-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-div-child-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0 rem; /* 0.5rem * 0.8 */
+}
+
+.payment-btn-1 {
+    border: none;
+    background-color: red;
+    height: 32px; /* 40px * 0.8 */
+    color: white;
+    width: 12rem; /* 15rem * 0.8 */
+    font-weight: bold;
+    font-size: 20.8px; /* Adding font-size for better scaling */
+}
+
+.payment-div-child-2 {
+    text-align: center;
+}
+
+.payment-btn-2 {
+    border: none;
+    background-color: aquamarine;
+    height: 36px; /* 45px * 0.8 */
+    color: red;
+    width: 8rem; /* 10rem * 0.8 */
+    font-weight: bold;
+    font-size: 10.4px; /* 13px * 0.8 */
+}
+.product-info {
+    text-align: left;
+    white-space: normal; 
+    word-break: break-word; 
+    padding: 0.5rem; 
+}
+.table-success{
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .cart-child1 {
+        height: 8rem;
+        background-image: url(https://wallpapercave.com/wp/wp2800736.jpg);
+        background-attachment: fixed; 
+        background-size: cover; 
+        color: white;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .cart-child2 {
+        display: flex;
+        align-items: center;
+        height: 1.5rem;
+        background-color: rgb(244, 244, 246);
+        padding-left: 2.4rem;
+        font-size: 15px;
+    }
+
+    .cart-child3 {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        justify-content: center;
+        padding: 2.4rem;
+    }
+
+    .my-table {
+        width: 20rem;
+    }
+
+    .my-table1 {
+        width: 6rem;
+    }
+
+    .table-success {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .payment-div {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 16rem;
+        padding: 1.6rem;
+        height: fit-content;
+    }
+
+    .payment-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .payment-div-child-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .payment-btn-1 {
+        border: none;
+        background-color: red;
+        height: 32px;
+        color: white;
+        width: 12rem;
+        font-weight: bold;
+        font-size: 20.8px;
+    }
+
+    .payment-div-child-2 {
+        text-align: center;
+    }
+
+    .payment-btn-2 {
+        border: none;
+        background-color: aquamarine;
+        height: 36px;
+        color: red;
+        width: 8rem;
+        font-weight: bold;
+        font-size: 10.4px;
+    }
+
+    .product-info {
+        text-align: left;
+        white-space: normal;
+        word-break: break-word;
+        padding: 0.5rem;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .cart-child1 {
+        height: 9.6rem; /* 12rem * 0.8 */
+        background-image: url(https://wallpapercave.com/wp/wp2800736.jpg);
+        background-attachment: fixed; 
+        background-size: cover; 
+        color: white;
+        font-size: 32px; /* 40px * 0.8 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .cart-child2 {
+        display: flex;
+        align-items: center;
+        height: 1.6rem; /* 2rem * 0.8 */
+        background-color: rgb(244, 244, 246);
+        padding-left: 1.92rem; /* 2.4rem * 0.8 */
+        font-size: 12px; /* 15px * 0.8 */
+    }
+
+    .cart-child3 {
+        display: flex;
+        flex-direction: column; /* Changed to column for mobile view */
+        justify-content: center;
+        padding: 1rem; /* 2.4rem * 0.8 */
+    }
+
+    .my-table {
+        width: 20rem; /* 40rem * 0.8 */
+    }
+
+    .my-table1 {
+        width: 4.8rem; /* 6rem * 0.8 */
+    }
+
+    .table-success {
+        font-size: 10.4px; /* 13px * 0.8 */
+        text-align: center;
+    }
+
+    .payment-div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.92rem; /* 2.4rem * 0.8 */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 12.8rem; /* 16rem * 0.8 */
+        padding: 1.28rem; /* 1.6rem * 0.8 */
+        height: fit-content;
+        width: 100%;
+    }
+
+    .payment-item {
+        display: flex;
+        flex-direction: column; /* Changed to column for mobile view */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .payment-div-child-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0; /* 0rem remains unchanged */
+    }
+
+    .payment-btn-1 {
+        border: none;
+        background-color: red;
+        height: 25.6px; /* 32px * 0.8 */
+        color: white;
+        width: 9.6rem; /* 12rem * 0.8 */
+        font-weight: bold;
+        font-size: 16.64px; /* 20.8px * 0.8 */
+    }
+
+    .payment-div-child-2 {
+        text-align: center;
+    }
+
+    .payment-btn-2 {
+        border: none;
+        background-color: aquamarine;
+        height: 28.8px; /* 36px * 0.8 */
+        color: red;
+        width: 6.4rem; /* 8rem * 0.8 */
+        font-weight: bold;
+        font-size: 8.32px; /* 10.4px * 0.8 */
+    }
+
+    .product-info {
+        text-align: left;
+        white-space: normal;
+        word-break: break-word;
+        padding: 0.4rem; /* 0.5rem * 0.8 */
+    }
+}
+
+@media (max-width: 320px) {
+    .cart-child1 {
+        height: 9.6rem; /* 12rem * 0.8 */
+        background-image: url(https://wallpapercave.com/wp/wp2800736.jpg);
+        background-attachment: fixed; 
+        background-size: cover; 
+        color: white;
+        font-size: 32px; /* 40px * 0.8 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .cart-child2 {
+        display: flex;
+        align-items: center;
+        height: 1.6rem; /* 2rem * 0.8 */
+        background-color: rgb(244, 244, 246);
+        padding-left: 1.92rem; /* 2.4rem * 0.8 */
+        font-size: 12px; /* 15px * 0.8 */
+    }
+
+    .cart-child3 {
+        display: flex;
+        flex-direction: column; /* Changed to column for mobile view */
+        gap: 8rem; /* 10rem * 0.8 */
+        justify-content: center;
+        padding: 0.5rem; /* 2.4rem * 0.8 */
+    }
+
+    .my-table {
+        width: 15rem;
+        /* table-layout: fixed; */
+    }
+
+    .my-table1 {
+        width: 6rem;
+    }
+
+    .table-success {
+        font-size: 10.4px; /* 13px * 0.8 */
+        text-align: center;
+    }
+
+    .payment-div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.92rem; /* 2.4rem * 0.8 */
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 12.8rem; /* 16rem * 0.8 */
+        padding: 1.28rem; /* 1.6rem * 0.8 */
+        height: fit-content;
+        width: 100%;
+    }
+
+    .payment-item {
+        display: flex;
+        flex-direction: column; /* Changed to column for mobile view */
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .payment-div-child-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 0; /* 0rem remains unchanged */
+    }
+
+    .payment-btn-1 {
+        border: none;
+        background-color: red;
+        height: 25.6px; /* 32px * 0.8 */
+        color: white;
+        width: 9.6rem; /* 12rem * 0.8 */
+        font-weight: bold;
+        font-size: 16.64px; /* 20.8px * 0.8 */
+    }
+
+    .payment-div-child-2 {
+        text-align: center;
+    }
+
+    .payment-btn-2 {
+        border: none;
+        background-color: aquamarine;
+        height: 28.8px; /* 36px * 0.8 */
+        color: red;
+        width: 6.4rem; /* 8rem * 0.8 */
+        font-weight: bold;
+        font-size: 8.32px; /* 10.4px * 0.8 */
+    }
+
+    .product-info {
+        text-align: left;
+        white-space: normal;
+        word-break: break-word;
+        padding: 0.4rem; /* 0.5rem * 0.8 */
+    }
+}
+
+

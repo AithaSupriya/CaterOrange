@@ -1,0 +1,368 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-text {
+  color: #2E94B9;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sub-header-text {
+  color: black;
+  font-weight: initial;
+  font-size: 45px;
+  text-align: center;
+}
+
+.meal-options-text {
+  color: black;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card-item {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 20%;
+  overflow: hidden;
+  background-color: #EAE7ED;
+}
+
+.card-img {
+  height: 50%;
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-price {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+.order-outer-div {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-icon {
+  height: 40px;
+  width: 40px;
+  color: white;
+  z-index: 5;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+.order-details-container {
+  background-color: white;
+  padding: 40px;
+  width: 80rem;
+  border-radius: 10px;
+}
+
+.outer-div {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  gap: 3rem;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.outer-div-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-timings {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-image {
+  height: 22rem;
+  width: 40rem;
+}
+
+.outer-div-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.select-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-field label {
+  font-weight: 500;
+}
+
+.select-field select,
+.select-field input {
+  height: 2rem;
+  text-align: center;
+}
+
+.add-ons-title {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.add-ons-input {
+  text-align: center;
+  height: 2.6rem;
+  width: 9rem;
+}
+
+.add-to-cart-button {
+  height: 3rem;
+  width: 12rem;
+  background-color: brown;
+  border: none;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.modal {
+  display: block;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.modal-dialog {
+  display: inline-block;
+  margin-top: 20%;
+  position: relative;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .cards-wrapper {
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .header-text {
+    color: #2E94B9;
+    font-weight: bold;
+    font-size: 13px; 
+    text-align: center;
+  }
+  
+  .sub-header-text {
+    color: black;
+    font-weight: initial;
+    font-size: 15px; /* Adjusted font size for smaller screens */
+    text-align: center;
+  }
+  
+  .meal-options-text {
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px; /* Adjusted font size for smaller screens */
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .card-item {
+    width: 250px;
+    height: 300px; /* Adjusted height for smaller screens */
+    border-radius: 10px;
+  }
+
+  .card-img {
+    height: 150px; /* Adjusted height for smaller screens */
+    width: 100%;
+    object-fit: cover;
+  }
+  
+
+  .card-body {
+    padding: 0.5rem; /* Adjusted padding for smaller screens */
+  }
+
+  .card-text {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+
+  .card-description {
+    font-size: 10px; /* Adjusted font size for smaller screens */
+    text-align: center;
+  }
+
+  .card-price {
+    font-size: 10px; /* Adjusted font size for smaller screens */
+  }
+
+  .order-details-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .outer-div {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .order-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .cards-wrapper {
+    gap: 2rem;
+    padding: 1rem;
+    display: flex;
+  }
+
+  .header-text {
+    color: #2E94B9;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .sub-header-text {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .meal-options-text {
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .card-item {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    
+  }
+
+  .card-item {
+    width: 15rem;
+    height: 20rem;
+}
+
+  .card-img {
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 1rem;
+   
+  }
+
+  .card-text {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .card-price {
+    font-size: 12px;
+  }
+
+  .order-details-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .outer-div {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .order-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+  }
+} 
+
