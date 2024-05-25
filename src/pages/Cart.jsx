@@ -12,6 +12,14 @@ const Cart = () => {
     const [products, setProducts] = useState([]);
     const { cart, addToCart, setCartItems } = useCart();
     const [OrderAddress, setOrderAddress] = useState('');
+    const [expandedDetails, setExpandedDetails] = useState({});
+
+    const handleToggleDetails = (index) => {
+        setExpandedDetails(prevState => ({
+            ...prevState,
+            [index]: !prevState[index]
+        }));
+    };
 
 
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
@@ -228,14 +236,21 @@ const Cart = () => {
                                 const total = item.itemPrice * quantity;
                                 return (
                                     <tr key={index}>
-                                        <td className='product-info'>{item.itemName}<br />{item.itemDetails}</td>
+                                        {/* <td className='product-info'>{item.itemName}<br />{item.itemDetails}</td> */}
+                                        <td className='product-info' onClick={() => handleToggleDetails(index)}>
+                                            {item.itemName}
+                                            <br />
+                                            <span className={expandedDetails[index] ? 'expanded' : ''}>
+                                                {expandedDetails[index] ? item.itemDetails : `${item.itemDetails.slice(0, 20)}...`}
+                                            </span>
+                                        </td>
                                         <td>{item.itemPrice}</td>
                                         <td>
                                             {item.itemName === 'Veg Meal' || item.itemName === 'Gulab Jamoon' ? (
-                                                <div style={{ display: 'flex', flexDirection: 'row', gap: '2rem' }}>
-                                                    <button onClick={() => handleDecrement(item.itemName)} style={{ backgroundColor: '#EE4266', border: 'none', width: '3rem', borderRadius: '10%', color: 'white', fontSize: '20px' }}>-</button>
+                                                <div style={{ display: 'flex', flexDirection: 'row', gap: '1rem', justifyContent: 'center', alignItems: 'center'  }}>
+                                                    <button onClick={() => handleDecrement(item.itemName)} style={{ backgroundColor: '#EE4266', border: 'none', width: '2rem', borderRadius: '10%', color: 'white', fontSize: '20px' }}>-</button>
                                                     {quantity}
-                                                    <button onClick={() => handleIncrement(item.itemName)} style={{ backgroundColor: '#EE4266', border: 'none', width: '3rem', borderRadius: '10%', color: 'white', fontSize: '20px' }}>+</button>
+                                                    <button onClick={() => handleIncrement(item.itemName)} style={{ backgroundColor: '#EE4266', border: 'none', width: '2rem', borderRadius: '10%', color: 'white', fontSize: '20px' }}>+</button>
                                                 </div>
                                             ) : (
                                                 // Render nothing for other items

@@ -31,4 +31,36 @@
     text-overflow: ellipsis;
     max-width: 600px; 
   }
+
+
+  @media (max-width: 425px){
+    .address-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 5rem;
+      padding-left: 40px;
+    }
+  }
   
+  @media (max-width: 320px)  {
+    .address-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 5rem;
+      padding-left: 20px;
+    }
+  }
+  @media (max-width: 375px)  {
+    .address-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 5rem;
+      padding-left: 15px;
+    }
+  }

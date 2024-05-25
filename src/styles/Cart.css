@@ -91,7 +91,8 @@
     text-align: left;
     white-space: normal; 
     word-break: break-word; 
-    padding: 0.5rem; 
+    padding: 0.5rem;
+    cursor: pointer; 
 }
 .table-success{
     text-align: center;
@@ -193,6 +194,8 @@
         white-space: normal;
         word-break: break-word;
         padding: 0.5rem;
+        cursor: pointer; 
+
     }
 }
 
@@ -222,18 +225,18 @@
 
     .cart-child3 {
         display: flex;
-        flex-direction: column; /* Changed to column for mobile view */
+        flex-direction: column; 
         justify-content: center;
-        padding: 1rem; /* 2.4rem * 0.8 */
+        padding: 1rem; 
     }
 
-    .my-table {
-        width: 20rem; /* 40rem * 0.8 */
-    }
+    /* .my-table {
+        width: 20rem;
+    } */
 
-    .my-table1 {
-        width: 4.8rem; /* 6rem * 0.8 */
-    }
+    /* .my-table1 {
+        width: 4.8rem; 
+    } */
 
     .table-success {
         font-size: 10.4px; /* 13px * 0.8 */
@@ -294,6 +297,7 @@
         white-space: normal;
         word-break: break-word;
         padding: 0.4rem; /* 0.5rem * 0.8 */
+        cursor: pointer; 
     }
 }
 
@@ -323,23 +327,33 @@
     .cart-child3 {
         display: flex;
         flex-direction: column; /* Changed to column for mobile view */
-        gap: 8rem; /* 10rem * 0.8 */
+        gap: 2rem; /* Reduced gap for mobile view */
         justify-content: center;
         padding: 0.5rem; /* 2.4rem * 0.8 */
+        width: 100%;
     }
 
-    .my-table {
-        width: 15rem;
-        /* table-layout: fixed; */
-    }
-
-    .my-table1 {
-        width: 6rem;
+    .order-table-div {
+        width: 100%; /* Ensure the div takes full width of container */
+        overflow-x: auto; /* Add horizontal scroll for overflow */
     }
 
     .table-success {
-        font-size: 10.4px; /* 13px * 0.8 */
+        font-size: 10.4px; 
         text-align: center;
+    }
+
+    .my-table {
+        width: 80% !important; /* Make table take full width of container */
+        table-layout: auto; /* Ensure table layout adjusts automatically */
+    }
+
+    .my-table th {
+        font-size: 12px; /* Adjust header font size for better readability */
+    }
+
+    .my-table td {
+        font-size: 10px; /* Adjust cell font size for better readability */
     }
 
     .payment-div {
@@ -347,10 +361,9 @@
         flex-direction: column;
         gap: 1.92rem; /* 2.4rem * 0.8 */
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        width: 12.8rem; /* 16rem * 0.8 */
+        width: 100%;
         padding: 1.28rem; /* 1.6rem * 0.8 */
         height: fit-content;
-        width: 100%;
     }
 
     .payment-item {
@@ -396,7 +409,10 @@
         white-space: normal;
         word-break: break-word;
         padding: 0.4rem; /* 0.5rem * 0.8 */
+        font-size: 10px; /* Adjust product info font size for better readability */
+        cursor: pointer; 
     }
 }
+
 
 
